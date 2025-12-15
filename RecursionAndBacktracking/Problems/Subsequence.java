@@ -1,4 +1,4 @@
-package RecursionAndBacktracking;
+package RecursionAndBacktracking.Problems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +24,10 @@ public class Subsequence {
       }
 
       cur.add(nums[i]);
-      subsets(i+1, nums, cur, res);
+      subsets(i+1, nums, cur, res); // take
 
-      cur.remove(cur.size()-1);
-      subsets(i+1, nums, cur, res);
+      cur.remove(cur.size()-1); // backtrack
+      subsets(i+1, nums, cur, res); // don't take
 
 
 

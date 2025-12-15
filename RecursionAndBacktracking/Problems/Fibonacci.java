@@ -1,4 +1,4 @@
-package RecursionAndBacktracking;
+package RecursionAndBacktracking.Problems;
 
 public class Fibonacci {
     
