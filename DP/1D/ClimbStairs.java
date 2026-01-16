@@ -6,8 +6,8 @@ public class ClimbStairs {
         if(n < 0) return 0;
         if(dp[n] != -1) return dp[n];
         
-        int op1 = steps(n-1, dp);
-        int op2 = steps(n-2, dp);
+        int op1 = climbStairs(n-1, dp);
+        int op2 = climbStairs(n-2, dp);
 
         return dp[n] = op1 + op2;
     }
